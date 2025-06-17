@@ -1,0 +1,101 @@
+:root {
+  --font-color: #0f172a; /* Midnight Slate */
+  --body-bg-color: #d6e6f6; /* Soft Ice Gray */
+  --div-bg-color: #38bdf8; /* Sky Blue Neon */
+  --content-bg-color: #d5d8dc; /* Sky Blue Neon */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Fira Code;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--div-bg-color);
+  color: var(--font-color);
+  padding: 0.3;
+}
+
+.header img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.header img,
+p {
+  margin: 0.3rem 1.2rem;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  background-color: #38bdf8;
+}
+
+/* sidebar */
+.sidebar {
+  float: left;
+  margin: 0.2rem 1rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.sidebar li {
+  list-style: none;
+  margin: 0.2rem 0rem;
+  border: 1px solid var(--body-bg-color);
+  background-color: var(--font-color);
+  color: var(--body-bg-color);
+  padding: 0.2rem;
+}
+
+.sidebar .myhobi h3 {
+  margin-bottom: 1rem;
+}
+
+.sidebar .mycita-cita h3 {
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* about */
+.about {
+  background-color: var(--content-bg-color);
+  margin: 0.2rem 0rem 1rem 22rem;
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
